@@ -1,8 +1,14 @@
+sorted_alphabet = []
+sorted_frequencies = []
+key = {'8': '', 'И': '', '2': '', 'Х': '', '>': '', 'Ф': '', '0': '', '1': 'О', 'c': 'Ъ', '.': '', ' ': '', 't': 'Э',
+       'Ы': '', 'О': '', 'А': '', ',': '', 'К': '', 'Е': '', 'Б': '', '<': '', 'a': '', 'М': '', '?': '', '9': '',
+       'b': '', 'Л': '', 'Д': '', 'r': '', '3': '', 'Я': ' ', '-': '', 'Ч': '', 'Ь': ''}
+
+
 def find_alphabet():
     ALPHABET2 = set()
     with open('files/cod1.txt', 'r', encoding='utf-8') as f:
         data = f.read()
-        len_data = len(data)
         for el in data:
             ALPHABET2.add(el)
             # FREQUENCIES[f'{el.upper()}'] += 1
